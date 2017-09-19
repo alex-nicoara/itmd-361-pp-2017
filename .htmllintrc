@@ -1,8 +1,8 @@
 {
     // names of npm modules to load into htmllint
     "plugins": [],
-
-    // TODO: export htmllint"s default cfg
+    
+    // Configuration options:
     "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "style", "width", "height", "onload", "onclick"], // ban deprecated/obsolete attributes
     "attr-name-style": "dash", // allow hyphens/dashes in attributes, e.g., for data- attributes
     "attr-no-dup": true, // no duplicate attributes

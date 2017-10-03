@@ -9,24 +9,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
-/* ==== MODULAR STYLES === */
-#three,
-#two,
-#one {
-  color: white;
-}
-#three {
-  background-color: purple;
-}
-#two {
-  background-color: green;
-}
-#one {
-  background-color: red;
-}
-
-
-/* ==== LAYOUT STYLES ==== */
+/* ==== MODULAR & LAYOUT STYLES ==== */
 #content {
   display: flex;
   flex-flow: row wrap;
@@ -37,18 +20,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #one {
   flex: 1 100%;
   height: 100vw;
+  color: white;
 }
 
 #three {
   order: 3;
+  background-color: purple;
 }
 
 #two {
   order: 2;
+  background-color: green;
 }
 
 #one {
   order: 1;
+  background-color: red;
 }
 
 @media screen and (min-width: 600px) {

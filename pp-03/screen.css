@@ -52,13 +52,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
-  #content {
-
+  #one, #two {
+    flex: 1 auto;
   }
 }
 
 @media screen and (min-width: 800px) {
-  #content {
-
+  #three {
+    flex: 1 auto;
   }
 }

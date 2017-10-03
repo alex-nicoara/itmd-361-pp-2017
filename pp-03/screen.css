@@ -38,6 +38,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   background-color: red;
 }
 
+/* The linter complains about the min-width value in pixels,
+   but we need to use pixels to express the real resolution
+   of the device.*/
+
 @media screen and (min-width: 600px) {
   #one, #two {
     flex: 1 auto;

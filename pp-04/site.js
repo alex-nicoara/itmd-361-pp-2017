@@ -5,6 +5,7 @@
 var x = 5;
 
 function double(num) {
+  var x = 0; /* Initialized x in the scope of function double */
   x = num * 2;
   return x;
 }

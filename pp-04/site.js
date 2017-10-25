@@ -55,7 +55,9 @@ console.log(i) // should be 'undefined', not 3
     memory allocation will be made with the same variable name. However,
     this newer memory allocation will represent x within the scope of the
     function, which when assigned a value or modified, will not change the
-    value of global variable x; since they are seperate memory allocations.
+    value of global variable x; since they are seperate memory allocations. If
+    the declaration was made in the same scope, the same memory allocation of
+    the variable x declared earlier in the scope would be modified.
 */
 
 function addTwo(x) {

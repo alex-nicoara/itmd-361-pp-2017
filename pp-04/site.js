@@ -37,6 +37,15 @@ console.log(i) // should be 'undefined', not 3
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
 
+/* ANSWER:
+    The constructor variable x in the function addTwo is declared more
+    recently than the global declaration of x, which means that a another
+    memory allocation will be made with the same variable name. However,
+    this newer memory allocation will represent x within the scope of the
+    function, which when assigned a value or modified, will not change the
+    value of global variable x; since they are seperate memory allocations.
+*/
+
 function addTwo(x) {
   x = x + 2;
   return x;

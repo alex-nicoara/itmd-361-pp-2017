@@ -22,14 +22,14 @@ console.log('The value of x is:', x, 'It should be 5.');
 (function() {
   var x = 5;
 
-  function double(num) {
-    var x;
-    x = num*2;
+  console.log(double(6));
+  console.log('The value of x is:', x, 'It should be 5.');
 
+  function double(num) {
+    var x = 0;
+    x = num * 2;
     return x;
   }
-
-  return double(6);
 })();
 
 //  3. Correct this function so that there is no i variable in

@@ -14,6 +14,8 @@ $.noConflict();
   $('#status-message').removeClass('hide');
   $('#doorbell-auplayer').addClass('hide');
 
-  
+  $('#doorbell').remove();
+  $('main').append('<button id="doorbell" name="button">Doorbell</button>');
+  doorbell = document.getElementById("doorbell");
 
 })(jQuery);

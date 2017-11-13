@@ -18,4 +18,21 @@ $.noConflict();
   $('main').append('<button id="doorbell" name="button">Doorbell</button>');
   doorbell = document.getElementById("doorbell");
 
+  // Functions
+  function playDoorbell(e) {
+    if(e.type === "click" || e.keyCode === 68) {
+      message.innerHTML = "Ringing!";
+      doorbellSound.play();
+      console.log("Doorbell ringing...");
+    }
+
+    return;
+  }
+
+  function resetBell(e) {
+    doorbellSound.currentTime = 0;
+    message.innerHTML = "Not ringing.";
+    return;
+  }
+
 })(jQuery);

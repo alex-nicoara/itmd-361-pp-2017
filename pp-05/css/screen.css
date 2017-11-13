@@ -23,9 +23,19 @@ audio {
   max-width: 100%;
 }
 
+strong {
+  font-weight: bold;
+}
 
 /* ===== LAYOUT STYLES ===== */
+#status-message {
+  padding: 1.125em;
+  border: 0.1875em dashed black;
+}
 
+#doorbell {
+  padding: 1.50em;
+}
 
 /* ===== MODULAR STYLES ===== */
 

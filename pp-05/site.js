@@ -35,4 +35,9 @@ $.noConflict();
     return;
   }
 
+  // Event Listeners
+  doorbell.addEventListener("click", playDoorbell);
+  window.addEventListener("keydown", playDoorbell);
+  doorbellSound.addEventListener("ended", resetBell);
+
 })(jQuery);

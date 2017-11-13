@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+audio, p {
+  margin-bottom: 1.375em;
+}
+
 img,
 video,
 audio {

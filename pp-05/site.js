@@ -3,7 +3,7 @@ $.noConflict();
 // Re-introduce the dollar sign scope to self executing function
 (function($) {
   // Variables
-  var doorbellSound = new Audio('media/doorbell.mp3');
+  var doorbellSound = new Audio('media/doorbell.ogg');
   var message = document.getElementById("status");
   var doorbell;
 
@@ -38,5 +38,4 @@ $.noConflict();
   doorbell.addEventListener("click", playDoorbell);
   window.addEventListener("keydown", playDoorbell);
   doorbellSound.addEventListener("ended", resetBell);
-
 })(jQuery);

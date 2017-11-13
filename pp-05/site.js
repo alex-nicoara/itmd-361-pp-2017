@@ -8,5 +8,12 @@ $.noConflict();
   var message = document.getElementById("status");
   var doorbell;
 
+  // Actions
+  $('html').removeClass('no-js').addClass('js');
+  $('#doorbell').removeClass('hide');
+  $('#status-message').removeClass('hide');
+  $('#doorbell-auplayer').addClass('hide');
+
   
+
 })(jQuery);

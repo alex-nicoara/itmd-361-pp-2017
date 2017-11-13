@@ -7,16 +7,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* ===== BASE STYLES ===== */
-
-
-img {
-  display: block;
-  max-width: 100%;
+html {
+  font-size: 1.375em;
 }
 
 body {
   padding: 10%;
+  text-align: center;
 }
+
+img,
+video,
+audio {
+  display: block;
+  max-width: 100%;
+}
+
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -25,3 +31,6 @@ body {
 
 
 /* ===== STATE STYLES ===== */
+.hide {
+  display: none;
+}
